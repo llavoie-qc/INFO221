@@ -1,16 +1,22 @@
 == S01
 
-=== 2025-01-08
-* Présentation du plan de l'activité (IFT187_2025-1.pdf)
+=== 2025-04-28
+* Présentation du plan de l'activité (INFO221_2025-1_PDM)
 * Perspective historique et scientifique de la théorie relationnelle
 * Organisation des TD et TP
 * Annonce du projet
 * Lectures
   - TMR_01-Rappels (au besoin)
 
-=== 2025-01-09
+=== 2025-04-29
 * Présentation de MCD_00-Preambule
 * Présentation de TMR_01-Introduction
   - Critères d’adéquation
   - Caractérisation des problèmes de données par les huit «V»
 * Travail dirigé
+
+=== 2025-04-30
+À venir
+
+=== 2025-05-02
+À venir

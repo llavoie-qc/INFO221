@@ -1,9 +1,8 @@
-== INFO 323
-Matériel de cours de l’activité INFO323 — Exploitation et modélisation de données — dispensée aux Ucac-Icam de Douala et Ulc-Icam de Kinshasa au trimestre d’hiver 2025.
+== INFO 221
+Matériel de cours de l’activité INFO221 — Éléments de bases données — dispensée au campus de l’Ucac-Icam à Douala et à celui de l’Ulc-Icam à Kinshasa au semestre d’hiver 2025.
 
-* Plan de l’activité (INFO323_2025-1_PDM.pdf)
+* Plan de l’activité (INFO221_2025-1_PDM.pdf)
 * Standard de programmation SQL (STD-SQL-01_NT.pdf)
-* Matériel de soutien classé par semaine de prestation (/S03 et /S04)
-* Matériel du travail de session (/TS)
+* Matériel classé par semaine de prestation (/S01 à /S04)
 
 // include::Foire aux questions.adoc[]
