@@ -2,21 +2,27 @@
 
 === 2025-04-28
 * Présentation du plan de l'activité (INFO221_2025-1_PDM)
-* Perspective historique et scientifique de la théorie relationnelle
-* Organisation des TD et TP
-* Annonce du projet
+* Présentation de TMR_01-Introduction
+  - Critères d’adéquation
+  - Caractérisation des problèmes de données par les huit «V»
+* Travail dirigé
 * Lectures
   - TMR_01-Rappels (au besoin)
 
 === 2025-04-29
 * Présentation de MCD_00-Preambule
-* Présentation de TMR_01-Introduction
-  - Critères d’adéquation
-  - Caractérisation des problèmes de données par les huit «V»
-* Travail dirigé
+* Perspective historique et scientifique de la théorie relationnelle
+* Présentation de TMR_02-Fondements
+  - Diaporama de présentation TMR_02-Fondements_PRE
+  - Document de référence TMR_02-Fondements_NDC
+  - Diaporama de synthèse TMR_02-Fondements_SYN
 
 === 2025-04-30
-À venir
+* Organisation des TD et TP
+* Annonce du projet
+* Travail dirigé sur TMR_02-Fondements
+  - Diaporama de suivi TMR_02-Fondements_TD
 
 === 2025-05-02
 À venir
+
