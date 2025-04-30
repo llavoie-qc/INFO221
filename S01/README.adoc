@@ -5,7 +5,7 @@
 * Présentation de TMR_01-Introduction
   - Critères d’adéquation
   - Caractérisation des problèmes de données par les huit «V»
-* Travail dirigé
+* Travail dirigé (TD) mettant en prratique les huit «V»
 * Lectures
   - TMR_01-Rappels (au besoin)
 
@@ -18,8 +18,7 @@
   - Diaporama de synthèse TMR_02-Fondements_SYN
 
 === 2025-04-30
-* Organisation des TD et TP
-* Annonce du projet
+* Organisation des travaux dirigés (TD) et des travaux pratiques (TP)
 * Travail dirigé sur TMR_02-Fondements
   - Diaporama de suivi TMR_02-Fondements_TD
 
