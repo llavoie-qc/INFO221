@@ -8,7 +8,7 @@ Encodage : UTF-8, sans BOM; fin de ligne Unix (LF)
 Plateforme : PostgreSQL 9.4 à 17
 Responsable : Luc.LAVOIE@USherbrooke.ca
 Version : 0.1.2a
-Statut : en cours de développpement
+Statut : en cours de développement
 Résumé : Création modèle logique du schéma Herbivorie.
 -- =========================================================================== A
 */
