@@ -223,24 +223,27 @@ WHERE obs_T2 < (SELECT seuil FROM B)
 ;
 
 -- R08.
--- Soit k, la plus grande largeur de feuille parmi les plants dont la floraison
+-- Soit k, la largeur moyenne des feuilles des plants dont la floraison
 -- est antérieure au 18 mai 2017.
 -- Quels sont les plants qui ne sont pas en floraison au 30 juin et dont la largeur
 -- de feuilles est plus grande que k ?
 -- Donner l’étiquette, la placette et la parcelle de chaque plant.
 -- CLARIFICATION
---   Soit k, la plus grande largeur de feuille parmi les plants dont la floraison
+--   Soit k, la largeur moyenne des feuilles des plants dont la floraison
 --   est antérieure au 18 mai 2017.
 --   Au 30 juin, quels sont les plants qui ne sont pas en floraison et dont la largeur
 --   de feuille est plus grande que k ?
 WITH
-  k AS (SELECT MAX(largeur) AS largeur FROM ObsDimension WHERE date < '2017-05-18'),
-  F AS (SELECT DISTINCT id FROM ObsFloraison WHERE fleur AND date < '2017-06-30'),
-  D AS (SELECT DISTINCT id, largeur FROM ObsDimension WHERE date < '2017-06-30')
+  Fk AS -- les plants dont la floraison est antérieure au 18 mai 2017
+    (SELECT DISTINCT id FROM ObsFloraison WHERE fleur AND date < '2017-05-18'),
+  k AS -- la plus grande largeur de feuille parmi Fk
+    (SELECT AVG(largeur) AS largeur FROM ObsDimension NATURAL JOIN FK),
+  Fg AS -- les plants dont la floraison est antérieure au 30 juin 2017
+    (SELECT DISTINCT id FROM ObsFloraison WHERE fleur AND date < '2017-06-30'),
+  non_Fg AS -- les plants qui ne sont pas en floraison au 30 juin
+    (SELECT id FROM Plant EXCEPT SELECT * FROM Fg)
 SELECT DISTINCT id, placette, parcelle
-FROM F
-  JOIN D USING (id)
-  JOIN plant USING (id)
+FROM non_Fg NATURAL JOIN Plant NATURAL JOIN ObsDimension
 WHERE largeur > (SELECT largeur FROM k)
 ;
 
@@ -286,6 +289,10 @@ FROM D
 --
 -- Deux plants semblables n’ont pas nécessaire le même de plants semblables...
 -- Pourquoi ?
+--
+-- INTERROGATION
+-- Que penser d’une relation de similitude qui, bien que réflexive et commutative,
+-- n’est pas transitive ?
 --
 -- CLARIFICATION
 --   1. À quel moment doit-on prendre les largeurs et les longueurs lorsqu’il y a
@@ -378,12 +385,17 @@ ORDER BY N1.placette, N2.placette -- petit ajout facultatif afin de faciliter la
 ////
 .Contributeurs :
   (CK01) Christina.Khnaisser@USherbrooke.ca
-  (LL01) Luc.Lavoie@USherbrooke.ca
+  (LL01) Luc.LAVOIE@USherbrooke.ca
 
 .Tâches projetées :
-* ...
+* TODO 2025-05-07 LL01. Développer des nouveaux jeux de données intermédiaires
+    - Afin de faciliter le développement et l'essai.
 
 .Tâches réalisées :
+* 2025-05-07 LL01. Inversion et ajustement aux requêtes R08 et R09.
+  - Suivre l’ordre de complexité croissante des requêtes.
+  - Commenter les sus-étapes des WITH.
+  - Donner plus de sens à la (nouvelle) R09 en définissant k comme la moyenne plutôt que le maximum.
 * 2025-02-05 LL01. Revue sommaire
   - Coquilles et ponctuation.
 * 2017-09-24 LL01. Création
