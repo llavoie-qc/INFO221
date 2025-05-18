@@ -1,0 +1,31 @@
+== Foire aux questions
+
+=== Discussion au sujet de la première cible de l’EPP
+.Réponse 2025-05-18
+[%collapsible]
+====
+La première cible de l’EPP est libellée ainsi
+
+* Corriger les inadéquations du modèle constatées lors de la phase 1
+  (plus particulièrement celles décelées lors du LAB4).
+
+Dans le but d’identifier ces inadéquations, il faut procéder à une revue
+du code issu de la phase 1 (les LAB1 à LAB4).
+Voici quelques étapes d’une telle revue :
+
+1. Identifier les inadéquations contenues dans le solutionnaire du LAB3
+   à la lumière des principes de conception et de normalisation vus en cours
+   la semaine dernière.
+
+2. Puisque les équipes formées pour le TS ont changé par rapport à celles du LAB4,
+   une équipe dispose d’au moins deux (voire trois ou quatre) solutions du LAB4.
+   Il faut donc les passer en revue et en retenir les meilleures propositions.
+
+3. À la lumière l’expérience de rédaction de requêtes lors des LAB2 à LAB4,
+   il est sans doute possible d’identifier certaines améliorations qui
+   rendraient le modèle plus adéquat.
+
+Il faut ensuite dresser la liste priorisée de ces améliorations, puis choisir
+celles à mettre en oeuvre.
+Cette liste et ce choix doivent être documentés dans le document AMC à remettre.
+====

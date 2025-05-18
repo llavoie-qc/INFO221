@@ -1,0 +1,40 @@
+== Foire aux questions
+
+=== Installation de DataGrip sur un poste de travail
+.Réponse 2025-05-26
+[%collapsible]
+====
+* Un compte étudiant donnant accès gratuitement à plusieurs produits de JetBrains,
+  dont DataGrip, peut être obtenu à l’adresse suivante :
+  - https://www.jetbrains.com/fr-fr/community/education/#students
+
+* Lorsqu’il est envisagé d’utiliser plusieurs ateliers JetBrains
+  (tels que DataGrip, Intelli-J, CLion, Rider, WebStorm, PyCharm, etc.),
+  il est conseillé d’installer le gestionnaire d’outils ToolBox :
+  - https://www.jetbrains.com/fr-fr/toolbox-app/
+
+* Pour une installation indépendante de DataGrip :
+  - https://www.jetbrains.com/fr-fr/datagrip/
+====
+
+=== Installation de PostgreSQL sur un poste de travail
+.Réponse 2025-05-26
+[%collapsible]
+====
+* Pour une installation conviviale et flexible sur macOS :
+  - https://postgresapp.com/downloads.html
+
+* Pour une installation sur Linux, Widows et même macOS :
+  - https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+
+* Pour un inventaire des principales méthodes d’installation sur les principales plateformes :
+  - https://www.postgresql.org/download
+====
+
+=== Tutoriels facilitant la prise en main de DataGrip
+.Réponse 2025-05-26
+[%collapsible]
+====
+* DataGrip Introduction (11 min) : https://www.youtube.com/watch?v=Xb9K8IAdZNg
+* DataGrip Overview (40 min) : https://www.youtube.com/watch?v=U5SOD-eeK50
+====

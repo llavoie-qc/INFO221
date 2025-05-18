@@ -1,0 +1,7 @@
+= INFO221/TS
+Matériel requis dans pour la réalisation du travail de session (TS)
+
+* Énoncé préliminaire deportée (Herbivorie_P2_EPP.pdf)
+* Standard de programmation SQL (../STD-SQL-01_NT.pdf)
+
+include::FAQ.adoc[]
