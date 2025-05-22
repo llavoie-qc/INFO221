@@ -29,3 +29,41 @@ Il faut ensuite dresser la liste priorisée de ces améliorations, puis choisir
 celles à mettre en oeuvre.
 Cette liste et ce choix doivent être documentés dans le document AMC à remettre.
 ====
+
+=== Faut-il prendre en compte les « Tâches projetées » indiquées dans les solutionnaires des LABx ?
+.Réponse 2025-05-22
+[%collapsible]
+====
+Dans les commentaires en fin des fichiers SQL des solutionnaires,
+des « Tâches projetées » et des « TODO » sont souvent documentés.
+Il est effectivement important de les prendre en considération lors de
+l’analyse des tâches à faire aux étapes 1 et 2 du TS.
+
+Il est également important de prioriser la liste de tâches obtenues,
+car il ne sera pas possible de toutes les réaliser compte tenu du temps
+restant d’ici à la livraison du TS le dimanche 25 mai 2025 à 23:59.
+
+Voici deux exemples
+
+.Herbivorie_cre
+* 2022-01-23 LL01. Compléter le schéma
+  - Décomposer et temporaliser les observations relatives aux placettes
+    (obstruction latérale, couverture au sol, espèces dominantes, etc.).
+* 2017-09-19 LL01. Compléter le schéma
+  - Compléter les contraintes, en particulier :
+    *** la date d’observation d’un plan ne peut être antérieure à son identification ;
+    *** la date d’identification d’un plant ne peut être antérieure à celui de sa placette ;
+    *** les obstructions latérales observées d’une placette doivent être cohérentes ;
+    *** les couvertures au sol observées d’une placette doivent être cohérentes.
+* 2017-09-18 LL01. Renommer plus rigoureusement les concepts utilisés par le schéma
+  - Plusieurs identificateurs sont inappropriés en regard des concepts véhiculés.
+  - Certaines abréviations prêtent à confusion.
+  - La constitution d’un dictionnaire de données et l’utilisation d’une terminologie
+    rigoureuse sont fortement recommandées.
+  - Entre autres exemples : obs -> obstruction latérale, taux -> pourcentage,
+    arb -> variété d’arbres, peup, plac, etc.
+
+.Herbivorie_del
+* 2022-01-30 LL01. Évolution
+  - Maintenir le script au fil de l’évolution de Herbivorie_cre.sql
+====
